@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESUME MAKING </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Let's Make Your Resume</h2>
+    <form action="resumeinsert.php" method="post">
+          
+
+       
+
+
+
+
+    
+             <input type="text" id="fname" name="fname"placeholder="FIRST NAME">
+             
+        <input type="text" id="lname" name="lname"placeholder="LAST NAME"><br>
+       <h3> <input type="email" id="email" name="email"placeholder="Email">
+        <input type="number" name="phone" id="phone" placeholder="Phone no">
+       </h3><h1>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </h1>
+        <br>
+         <input type="text" id="add1" name="add1" placeholder="House Number,Land Mark,District"><br>
+        <h3> <input type="number" id="add2" name="add2" placeholder="Pin code"></h3>
+         
+         
+         <br>
+         <br><br>
+<H1>SKILL</H1>
+<select id="skills" multiple>
+        <option value="Communication">Communication</option>
+        <option value="Teamwork">Teamwork</option>
+        <option value="Problem-solving">Problem-solving</option>
+        <option value="Leadership">Leadership</option>
+        <option value="Time Management">Time Management</option>
+        <option value="Creativity">Creativity</option>
+        <option value="Adaptability">Adaptability</option>
+        <option value="Critical Thinking">Critical Thinking</option>
+        <option value="Attention to Detail">Attention to Detail</option>
+        <option value="Decision Making">Decision Making</option>
+        <option value="Organization">Organization</option>
+        <option value="Negotiation">Negotiation</option>
+        <option value="Conflict Resolution">Conflict Resolution</option>
+        <option value="Technical Skills">Technical Skills</option>
+        <option value="Analytical Skills">Analytical Skills</option>
+        <option value="Research Skills">Research Skills</option>
+        <option value="Customer Service">Customer Service</option>
+        <option value="Programming Languages">Programming Languages</option>
+        <option value="Data Analysis">Data Analysis</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Financial Management">Financial Management</option>
+        <option value="Project Management">Project Management</option>
+        <option value="Sales Skills">Sales Skills</option>
+        <option value="Public Speaking">Public Speaking</option>
+        <option value="Language Proficiency">Language Proficiency</option>
+        <option value="First Aid">First Aid</option>
+        <option value="Networking">Networking</option>
+        <option value="SEO/SEM Marketing">SEO/SEM Marketing</option>
+        <option value="UI/UX Design">UI/UX Design</option>
+        <!-- Add more options as needed -->
+    </select>
+
+    <h2>Selected Skills:</h2>
+    <label for="message"></label><br>
+<textarea id="message" name="message" aria-rowcount="10" cols="50"></textarea><br><br>
+    
+
+
+    <script>
+        // JavaScript to handle selection and display
+        const skillsSelect = document.getElementById('skills');
+        const messageTextarea = document.getElementById('message');
+
+        skillsSelect.addEventListener('change', function() {
+            // Get selected options
+            const selectedOptions = Array.from(this.selectedOptions).map(option => option.value);
+
+            // Display selected options in textarea
+            messageTextarea.value = selectedOptions.join(', ');
+        });
+    </script>
+
+     <h1> Experience</h1>
+     <textarea name="exp" id="exp" aria-rowcount="10"></textarea>
+     <h1>Language</h1>
+     <textarea name="language" id="language" aria-rowcount="10"></textarea>
+
+
+
+
+
+    <body>
+       <h1>
+            10th
+        </h1>
+        <p>
+            <input type="text" name="hboard" id="hboard" placeholder="Board Name">
+            <input type="text" name="hrollno" id="hrollno" placeholder="Rollno">
+            <input type="text" name="hpercentage" id="hpercentage" placeholder="Percentage">
+            
+        </p>
+        <h1>
+            12th
+        </h1>
+        <p>
+            <input type="text" name="iboard" id="iboard" placeholder="Board Name">
+            <input type="text" name="irollno" id="irollno" placeholder="Rollno">
+            <input type="text" name="ipercentage" id="ipercentage" placeholder="Percentage">
+            
+        </p>
+        <h1>
+            Graduation
+        </h1>
+        <p>
+            <input type="text" name="gcourse" id="gcourse" placeholder="course">
+            <input type="text" name="gboard" id="gboard" placeholder="Board Name">
+            <input type="text" name="grollno" id="grollno" placeholder="Rollno">
+            <input type="text" name="gpercentage" id="gpercentage" placeholder="Percentage">
+            
+        </p>
+        <h1>
+            Post Graduation
+        </h1>
+        <p>
+            <input type="text" name="pgcourse" id="pgcourse" placeholder="course">
+            <input type="text" name="pgboard" id="pgboard" placeholder="Board Name">
+            <input type="text" name="pgrollno" id="pgrollno" placeholder="Rollno">
+            <input type="text" name="pgpercentage" id="pgpercentage" placeholder="Percentage">
+            
+        </p>
+        <br>
+<right><h3>
+            <div class="content">
+        
+                <h2>Upload Image</h2>
+                <input type="file" id="img" name="img" accept="image/*">
+            </div>
+
+        <textarea name="addmore" id="addmore" aria-rowcount="10" placeholder="Add More "></textarea>
+        
+    <BR><BR></BR></BR>
+
+         <h3><button type="submit">submit</button></h3>
+         
+        </form>
+    </form>
+</body>
+</html>

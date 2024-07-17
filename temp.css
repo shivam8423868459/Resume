@@ -1,0 +1,52 @@
+
+.auto-style1 {
+    width: 100%;
+}
+.auto-style2 {
+    height: 23px;
+}
+.auto-style3 {
+    height: 23px;
+    width: 265px;
+}
+.auto-style5 {
+    width: 990px;
+}
+.auto-style6 {
+    width: 430px;
+}
+.auto-style7 {
+    width: 559px;
+}
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    font-size: 30px;
+}
+body{
+    font-size: 20px;
+}
+@media print {
+    .btn {
+      display: none;
+    }
+  }
+  .passport-pic {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
